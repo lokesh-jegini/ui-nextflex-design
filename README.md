@@ -8,3 +8,7 @@
     color:BLUE;
   }
 note:-command to install sass is npm i sass
+
+--------------------------------commit-2--------------------------
+1)ES-7 exxtension
+2)for material icons we want to install the materialui  icon package (first checking material ui icon prensent iour package are not we check in package.json page)

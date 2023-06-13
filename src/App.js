@@ -1,9 +1,11 @@
 import React from 'react';
+import './App.scss';
+import Home from './home/Home';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <h1>basic template</h1>
+       <Home/>
       </header>
     </div>
   );
