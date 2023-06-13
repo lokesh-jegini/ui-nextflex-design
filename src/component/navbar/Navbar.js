@@ -21,7 +21,15 @@ export default function Navbar() {
             <span>KID</span>
             <NotificationsNoneIcon className="icon" />
             <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg" alt="image not found" />
-            < ArrowDropDownIcon className="icon" />
+            <div className='profile'>
+               < ArrowDropDownIcon className="icon" />
+            <div className="options">
+              <span>setting</span>
+              <span>logout</span>
+            </div>
+            </div>
+           
+
           </div>
         </div>
       </div>
