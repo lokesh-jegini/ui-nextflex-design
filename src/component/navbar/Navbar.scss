@@ -2,7 +2,15 @@
     font-size: 14px;
     position: fixed;
     width: 100%;
-    background-color: var( --main-background-color);
+   &.light{
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8) 50%);
+    }
+  
+    &.black {
+       background: var(--main-background-color);
+    }
+    
+
     top:0px;
    .container {
      display: flex;

@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState} from 'react'
 import './Navbar.scss'
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
+
+
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true);
+    
+  return () => (window.onscroll = null);
+  };
+  console.log(isScrolled);
   return (
     <div>
-          <div className="Navbar">
+      <div className={`Navbar  ${isScrolled ?"black":"light"}`}>
         <div className="container">
           <div className="left">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4RsK4Rm6LuGd0SYHz7pSo6qWAcdUPgobt-mczoe0O51V8-7oxh-RbuRxeM-k9AkNonQ&usqp=CAU" alt="img not found" />
